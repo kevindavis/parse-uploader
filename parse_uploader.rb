@@ -42,7 +42,7 @@ options[:filenames].each do |filename|
     obj[options[:column_name]] = file
     if File.file?('config.yml')
       pairs = YAML.load_file('config.yml')
-      paris.keys.each do |key|
+      pairs.keys.each do |key|
         obj[key] = pairs[key]
       end
     end
